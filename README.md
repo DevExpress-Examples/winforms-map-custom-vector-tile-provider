@@ -6,7 +6,7 @@ This example shows how to create a custom provider that supplies the map with ve
 
 To do this, create a class derived from the [VectorTileDataProviderBase](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.VectorTileDataProviderBase) class. 
 
-Override the provider's [`GetStream`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.VectorTileDataProviderBase.GetStream(System.Int64-System.Int64-System.Int64)?p=netframework) method so that it returns a tile as a sequence of bytes for specific coordinates in the [tile grid](https://en.wikipedia.org/wiki/Tiled_web_map) at the specified zoom level. In this example, the `GetStream` method loads binary data in the PBF format in from the *Data/test.data* file.
+Override the provider's [`GetStream`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.VectorTileDataProviderBase.GetStream(System.Int64-System.Int64-System.Int64)?p=netframework) method so that it returns a tile as a sequence of bytes for specific coordinates in the [tile grid](https://en.wikipedia.org/wiki/Tiled_web_map) at the specified zoom level. In this example, the `GetStream` method loads binary data in the PBF format from the *Data/test.data* file.
 
 Assign the provider to the [`ImageLayer.DataProvider`](https://docs.devexpress.com/WindowsForms/DevExpress.XtraMap.ImageLayer.DataProvider?p=netframework) property.
 
